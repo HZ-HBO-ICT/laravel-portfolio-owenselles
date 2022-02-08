@@ -9,10 +9,10 @@ class FaqController
 
     public function show()
     {
-        $faqs = Faq::all();
+//        $faqs = Faq::all();
 
         return view('faq', [
-            'faqs' => $faqs
+            'faqs' => Faq::all()
         ]);
     }
 }

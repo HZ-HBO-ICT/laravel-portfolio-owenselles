@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
           content="Hi, I'm Owen. Nice to meet you. I am a software enigneering student from the Netherlands.">
-    <title>Owen Selles - Home</title>
+    <title>Owen Selles - About me</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
     <link href="{{ url('/css/styles.css') }}" rel="stylesheet">
 </head>
 
 <body>
-<div class="container-fluid ">
+<div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light animate__animated animate__fadeInDown">
         <div class="container-fluid">
             <a class="navbar-brand mb-0 h1" href="{{ url('') }}">Owen Selles</a>
@@ -25,12 +25,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav ms-auto" id="navbar-items">
-                    <a class="nav-link" href="{{ url('about') }}">About me</a>
+                    <a class="nav-link active" href="{{ url('about') }}">About me</a>
                     <a class="nav-link" href="{{ url('blog') }}">Blog</a>
                     <!-- Delete this page for professional use after assignment -->
                     <a class="nav-link" href="{{ url('faq') }}">FAQ</a>
                     <!-- <a class="nav-link" href="/contact.html">Contact</a> -->
-                    <!-- change to View work when dashboard isnt needed anymore and use to showcase projects -->
+                    <!-- change to View work when dahsboard isnt needed anymore and use to showcase projects maybe just on downside of landing -->
                     <button class="btn btn-dark me-2" id="dashboard"
                             onclick="window.location.href='{{ url('dashboard') }}';" type="button">Dashboard</button>
                 </div>
@@ -46,19 +46,19 @@
                 src="{{ url('/img/logo-github.webp') }}" loading="lazy" width="24" alt="github" class="social-icon"></a>
     </div>
 
-    <div class="gradient-container">
-        <img src="{{ url('/img/gradient.webp') }}" loading="eager" alt="gradient" width="auto" height="auto"
-             class="gradient-animation">
-    </div>
-
     <div class="container">
         <div class="row gx-5 align-items-center" id="intro-row">
-            <div class="col col-lg-10">
-                <h1 class="heading-big">A developer passionate about creating beautiful user friendly products</h1>
-                <p class="text-gray">Studying HBO ICT at <a href="https://hz.nl/en/study-programmes/it"
-                                                            style="color: black;" target="_blank" class="link">HZ University of Applied Sciences</a>.
-                    Team lead at Albert
-                    Heijn. Freelance software developer.</p>
+            <div class="col col-md-auto">
+                <div class="text-center">
+                    <img src="{{ url('/img/me.webp') }}" loading="lazy" alt="pic-of-me" width="400"
+                         class="pic-rounded img-fluid">
+                </div>
+            </div>
+
+            <div class="col col-md-5">
+                <h1 class="heading-big">Hi there!</h1>
+                <p class="text-big">Fuelled by a passion for technology, I have a deep desire to excel and
+                    continuously improve in my work. Learn more about my journey below.</p>
             </div>
         </div>
     </div>
@@ -66,24 +66,29 @@
     <div class="container">
         <div class="row gx-5 align-items-center" id="text-one">
             <div class="col col-lg-5">
-                <h1 class="heading-medium">About my study</h1>
-                <p class="text-medium">As someone that's always interested in technologies and how things work, I
-                    want to continue
-                    learning more about programming and IT in general. In my prior education, I already did some
-                    programming so HBO ICT is a logical choice for me to continue learning more.</p>
+                <h1 class="heading-medium">About me</h1>
+                <p class="text-medium">I'm Owen, a 20-year-old student from the Netherlands. When I am not studying
+                    I spend my time working as a team lead at the biggest dutch supermarket called Albert Heijn. I'm
+                    passionate about building software that improves the lives of those around me. I have some
+                    experience in software development, mobile app creation,
+                    front-end/back-end web, graphic design, and cloud management.
+                </p>
             </div>
-            <div class="col col-md-auto">
-                <div class="text-center">
-                    <img src="{{ url('/img/ict.webp') }}" loading="lazy" alt="pic-of-ict" width="450" height="auto"
-                         class="pic-rounded img-fluid pic-ict">
-                </div>
+            <div class="col col-lg-5">
+                <button type="button" class="btn btn-outline-dark">Hard-working</button>
+                <button type="button" class="btn btn-outline-dark">Leader</button>
+                <button type="button" class="btn btn-outline-dark">Creative</button>
+                <button type="button" class="btn btn-outline-dark">Serious</button>
+                <button type="button" class="btn btn-outline-dark">Helpful</button>
+                <button type="button" class="btn btn-outline-dark">Curious</button>
+                <button type="button" class="btn btn-outline-dark">Responsible</button>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="row gx-3 justify-content-md-center" id="text-two">
-            <div class="col col-md-auto">
+        <div class="row gx-5 align-items-center" id="text-one">
+            <div class="col col-lg-5">
                 <button type="button" class="btn btn-outline-dark">HTML</button>
                 <button type="button" class="btn btn-outline-dark">CSS</button>
                 <button type="button" class="btn btn-outline-dark">Java</button>
@@ -93,6 +98,22 @@
                 <button type="button" class="btn btn-outline-dark">Flutter</button>
                 <button type="button" class="btn btn-outline-dark">Javascript</button>
                 <button type="button" class="btn btn-outline-dark">Vue</button>
+                <button type="button" class="btn btn-outline-dark">Scrum</button>
+                <button type="button" class="btn btn-outline-dark">Firebase</button>
+                <button type="button" class="btn btn-outline-dark">Google Cloud</button>
+                <button type="button" class="btn btn-outline-dark">AWS IOT</button>
+                <button type="button" class="btn btn-outline-dark">Arduino</button>
+                <button type="button" class="btn btn-outline-dark">MySQL</button>
+                <button type="button" class="btn btn-outline-dark">Bootstrap</button>
+            </div>
+            <div class="col col-lg-5">
+                <h1 class="heading-medium">My experience so far</h1>
+                <p class="text-medium">Graduated as an MBO-4 Software developer, studying for my HBO ICT
+                    Bachelor's degree at HZ University of Applied Sciences. Worked for a year as an intern for
+                    Q-Aviation
+                    working on their cloud backend, dashboards, and APIs. Was involved in creating an indoor mapping
+                    application for Scalda and many more projects.
+                </p>
             </div>
         </div>
     </div>

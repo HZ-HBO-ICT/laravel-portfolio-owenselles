@@ -13,7 +13,7 @@ class Grade extends Model
 
         $this->refresh();
 
-//        do nothing when the new grade is lower than the current grade
+//        Do nothing when the new grade is lower than the current grade
         if ($this->best_grade >= $grade) {
             return;
         }

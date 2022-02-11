@@ -66,6 +66,12 @@ body {
 
 /* Blog */
 
+#intro-row-blog {
+    margin-top: 110px;
+    /*margin-bottom: 40px;*/
+    /*margin-left: 50px;*/
+}
+
 /* About */
 
 #intro-row {
@@ -184,9 +190,7 @@ body {
 
 /* Blog */
 
-.col-md-4 {
-    padding: 10px;
-}
+
 
 /* Text sizes */
 

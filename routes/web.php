@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\WelcomeController;
+use App\Models\Article;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\DashboardController;
@@ -23,6 +24,9 @@ Route::get('/posts/{post}', [PostController::class, 'show']);
 
 Route::get('/', [WelcomeController::class, 'show']);
 Route::get('/about', [AboutController::class, 'show']);
-Route::get('/blog', [BlogController::class, 'show']);
+Route::get('/blog', function () {
+    return view('blog', ['articles' => Article::latest()->get()]);
+});
+Route::get('blog/{article}', [BlogController::class, 'show']);
 Route::get('/faq', [FaqController::class, 'show']);
 Route::get('/dashboard', [DashboardController::class, 'show']);

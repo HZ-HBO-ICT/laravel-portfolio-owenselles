@@ -25,10 +25,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav ms-auto" id="navbar-items">
-                    <a class="nav-link {{ request()->path() === 'about' ? 'active' : '' }}" href="{{ url('about') }}">About me</a>
-                    <a class="nav-link {{ request()->path() === 'blog' ? 'active' : '' }}" href="{{ url('blog') }}">Blog</a>
+                    <a class="nav-link {{ request()->path() === 'about' ? 'active' : '' }}" href="{{ url('about') }}">About
+                        me</a>
+                    <a class="nav-link {{ request()->path() === 'articles' ? 'active' : '' }}"
+                       href="{{ url('articles') }}">Blog</a>
                     <!-- Delete this page for professional use after assignment -->
-                    <a class="nav-link {{ request()->path() === 'faq' ? 'active' : '' }}" href="{{ url('faq') }}">FAQ</a>
+                    <a class="nav-link {{ request()->path() === 'faq' ? 'active' : '' }}"
+                       href="{{ url('faq') }}">FAQ</a>
                     <!-- change to View work when dashboard isnt needed anymore and use to showcase projects -->
                     <button class="btn btn-dark me-2" id="dashboard"
                             onclick="window.location.href='{{ url('dashboard') }}';" type="button">Dashboard
